@@ -9,7 +9,7 @@ import torch
 def GetLabel(fileName):
   return fileName.split('-')[0]
 
-learn = load_learner(Path('server/export.pkl')) #Import Model
+learn = load_learner(Path('export.pkl')) #Import Model
 app = Flask(__name__)
 cors = CORS(app) #Request will get blocked otherwise on Localhost
 
